@@ -1,4 +1,4 @@
 # COMOR
 Computer Organization and Operating System 2/2566 /
-GGEZ__
-gg
+GGEZ <br />
+ggez

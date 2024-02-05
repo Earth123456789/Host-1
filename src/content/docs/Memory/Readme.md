@@ -13,9 +13,7 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 >1.free : คำสั่งนี้จะแสดงรายละเอียดเกี่ยวกับขนาด memory(RAM) และ swap(Virtual) ที่ถูกใช้ไปและที่เหลืออยู่ภายในระบบ โดยมีหน่วยเป็น kilobytes จะแสดงข้อมูลดังนี้
 
-<p align="center">
-  <img src="pic/1.jpg" alt=""/>
-</p>
+<img src="pic/1.jpg" alt=""/>
 
 |ข้อมูลที่แสดง|ความหมาย|  
 |:---:|:---:|
@@ -28,16 +26,12 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 ---
 >1.1 free -h : จะแสดงผลเหมือนกับ free แต่หน่วยของขนาดข้อมูลจะอยู่ในรูปแบบ human-readable หรือที่เรียกว่ามนุษย์เข้าใจได้
 
-<p align="center">
-  <img src="pic/2.jpg" alt=""/>
-</p>
+<img src="pic/2.jpg" alt=""/>
 
 ***
 >2.vmstat(virtual memory statistics) : เป็นคำสั่งที่ใช้แสดงผลรายงานเกี่ยวกับสถิติการทำงานของ Virtual memory
 
-<p align="center">
-  <img src="pic/3.jpg" alt=""/>
-</p>
+<img src="pic/3.jpg" alt=""/>
 
 * Procs
     * r (running): จำนวนกระบวนการที่กำลังรอให้ CPU ประมวลผล
@@ -65,23 +59,17 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 ***
 >2.1 vmstat -s : ใช้แสดงผลสถิติที่เกี่ยวข้องกับระบบทั้งหมด
 
-<p align="center">
-  <img src="pic/4.jpg" alt=""/>
-</p>
+<img src="pic/4.jpg" alt=""/>
 
 >2.2 vmstat -s | grep -i '.......' : ถ้าหากเราต้องการแค่บางข้อมูล เราสามารถใช้ คำสั่งนี้ได้ แล้วภายใน single quote(‘ ’) ให้ระบุข้อมูลที่เราต้องการสังเกต เช่น
 
-<p align="center">
-  <img src="pic/5.jpg" alt=""/>
-</p>
+<img src="pic/5.jpg" alt=""/>
 
 โดย grep ใช้สำหรับกรองและแสดงข้อมูล ส่วน -i ใช้เพื่อทำให้การค้นหาไม่ต้องพิจารณา case sensitive
 
 >3.top : ใช้เพื่อตรวจสอบการใช้งานของ memory และ CPU ที่กำลังทำงานอยู่ขณะนั้นแบบ real-time โดยจะแสดงข้อมูลของระบบและรายชื่อของกระบวนการทำงานหรือ thread ที่ถูกจัดการโดย linux kernel ซึ่งประกอบไปด้วย
 
-<p align="center">
-  <img src="pic/6.jpg" alt=""/>
-</p>
+<img src="pic/6.jpg" alt=""/>
 
 |ข้อมูลที่แสดง|ความหมาย|
 |:---:|:---:|
@@ -99,13 +87,8 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 >4.htop : การใช้งานเหมือน top เพียงแค่มีฟีเจอร์มากกว่าตัว top เช่น รองรับการทำงานของ mouse มีสีเพื่อบ่งบอกข้อมูลที่ต่างกัน
 
-
-<p align="center">
-  <img src="pic/7.jpg" alt=""/>
-</p>
+<img src="pic/7.jpg" alt=""/>
 
 <h4 style="color:red">Tips : หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์ command ตามนี้ เพื่อทำการ install htop</span>
 
-<p align="center">
-  <img src="pic/8.jpg" alt="" style="margin-top:20px"/>
-</p>
+<img src="pic/8.jpg" alt="" style="margin-top:20px"/>

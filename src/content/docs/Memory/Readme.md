@@ -89,6 +89,5 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 <img src="pic/7.jpg" alt=""/>
 
-<h4 style="color:red">Tips : หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์ command ตามนี้ เพื่อทำการ install htop</span>
+<h4 style="color:red">Tips : หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์คำสั่ง <span style="color:blue"><em>sudo snap install htop</em></span></h4>
 
-<img src="pic/8.jpg" alt="" style="margin-top:20px"/>

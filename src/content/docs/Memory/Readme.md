@@ -1,6 +1,111 @@
-# Hello Test
-helllo
-Dkubphom
-Ye
+# Memory
+>Memory คือ  อุปกรณ์เก็บสถานะของข้อมูลและชุดคำสั่ง เพื่อการประมวลผลของคอมพิวเตอร์ หน่วยความจำสามารถแบ่งออกได้เป็น 2 ประเภท คือหน่วยความจำถาวรกับหน่วยความจำชั่วคราว แต่ถ้าเราแบ่งตาม resource 
+ตามการใช้งานของระบบเราสามารถแบ่งได้ 2 แบบคือ
 
-## 
+* Physical Memory : คือหน่วยความจำหลักที่ติดตั้งอยู่ภายในเครื่องคอมพิวเตอร์ หรือที่เราเรียกว่า Random Access Memory (RAM) 
+* Virtual Memory : เป็นหน่วยความจำเสมือนที่เอาไว้รองรับหาก RAM ความจุไม่เพียงพอหรือต้องการลดภาระของ RAM
+
+โดย Virtual Memory จำเป็นต้องใช้ Physical Memory เพราะ Virtual Resource เป็นการแบ่ง 
+Physical Resource มาแบ่งการใช้งาน แต่ Physical Memory ไม่จำเป็นต้องใช้ Virtual Memory
+***
+
+#### คำสั่งที่ใช้ในการจัดการหรือตรวจสอบหน่วยความจำของ linux มีคร่าวๆ ดังนี้
+
+>1.free : คำสั่งนี้จะแสดงรายละเอียดเกี่ยวกับขนาด memory(RAM) และ swap(Virtual) ที่ถูกใช้ไปและที่เหลืออยู่ภายในระบบ โดยมีหน่วยเป็น kilobytes จะแสดงข้อมูลดังนี้
+
+<p align="center">
+  <img src="pic/1.jpg" alt=""/>
+</p>
+
+|ข้อมูลที่แสดง|ความหมาย|  
+|:---:|:---:|
+|total|memory/swap ทั้งหมดที่มี|
+|used|memory/swap ทั้งหมดที่ใช้อยู่|
+|free|memory/swap ทั้งหมดที่ว่างอยู่|
+|shared|memory มาใช้แทน disk ทำให้ทำงานได้เร็ว|
+|buff/cache|memory/swap ที่ใช้งานโดย buff/cache|
+|available|เป็น memory ที่ว่างให้ใช้สำหรับการเริ่มใช้งาน Application โดยไม่ต้องใช้ swap memory|
+---
+>1.1 free -h : จะแสดงผลเหมือนกับ free แต่หน่วยของขนาดข้อมูลจะอยู่ในรูปแบบ human-readable หรือที่เรียกว่ามนุษย์เข้าใจได้
+
+<p align="center">
+  <img src="pic/2.jpg" alt=""/>
+</p>
+
+***
+>2.vmstat(virtual memory statistics) : เป็นคำสั่งที่ใช้แสดงผลรายงานเกี่ยวกับสถิติการทำงานของ Virtual memory
+
+<p align="center">
+  <img src="pic/3.jpg" alt=""/>
+</p>
+
+* Procs
+    * r (running): จำนวนกระบวนการที่กำลังรอให้ CPU ประมวลผล
+    * b (blocked): จำนวนกระบวนการที่รอให้ถูกเรียกใช้ถึงจะทำงานได้    
+* Memory
+    * swpd : จำนวน virtual memory ที่ถูกใช้ไป
+    * free : จำนวน memory ที่ยังไม่ถูกใช้งาน
+    * buff : จำนวน memory ที่ใช้งานโดย buffers
+    * cache : จำนวน memory ที่ใช้งานโดย cache
+* Swap
+    * si (swap in) : จำนวนข้อมูลที่ถูกนำเข้ามาใน swap ที่มาจาก RAM
+    * so (swap out) : จำนวนข้อมูลที่ถูกส่งออกจาก swap ไป RAM
+* IO
+    * Bi (blocks in) : จำนวนข้อมูลที่ถูกอ่านจาก block device
+    * Bo (blocks out) : จำนวนข้อมูลที่ถูกส่งไปยัง block device
+* System
+    * In (interrupts) : จำนวนการเกิด interrupt ใน 1 วินาที
+    * Cs (context switches) : จำนวนการเปลี่ยนสถานะของกระบวนการใน 1 วินาที
+* CPU
+    * us (user time) : เวลาที่ใช้ในการประมวลผลที่ไม่เกี่ยวข้องกับ kernal
+    * sy (system time) : เวลาที่ใช้ประมวลผลงานที่เกี่ยวข้องกับ kernel
+    * id (idle time) : เวลาว่างที่ CPU ไม่ทำงาน
+    * wa (wait time) : เวลาที่ CPU ใช้รอ I/O
+    * st (steal time) : เวลาที่ CPU ถูกขโมยจาก virtual machine
+***
+>2.1 vmstat -s : ใช้แสดงผลสถิติที่เกี่ยวข้องกับระบบทั้งหมด
+
+<p align="center">
+  <img src="pic/4.jpg" alt=""/>
+</p>
+
+>2.2 vmstat -s | grep -i '.......' : ถ้าหากเราต้องการแค่บางข้อมูล เราสามารถใช้ คำสั่งนี้ได้ แล้วภายใน single quote(‘ ’) ให้ระบุข้อมูลที่เราต้องการสังเกต เช่น
+
+<p align="center">
+  <img src="pic/5.jpg" alt=""/>
+</p>
+
+โดย grep ใช้สำหรับกรองและแสดงข้อมูล ส่วน -i ใช้เพื่อทำให้การค้นหาไม่ต้องพิจารณา case sensitive
+
+>3.top : ใช้เพื่อตรวจสอบการใช้งานของ memory และ CPU ที่กำลังทำงานอยู่ขณะนั้นแบบ real-time โดยจะแสดงข้อมูลของระบบและรายชื่อของกระบวนการทำงานหรือ thread ที่ถูกจัดการโดย linux kernel ซึ่งประกอบไปด้วย
+
+<p align="center">
+  <img src="pic/6.jpg" alt=""/>
+</p>
+
+|ข้อมูลที่แสดง|ความหมาย|
+|:---:|:---:|
+|PID|แสดงรหัสลำดับของ task|
+|PR|ลำดับความสำคัญของกระบวนการทำงาน ถ้าเลขยิ่งน้อยยิ่งสำคัญมาก|
+|NI|เลขติดลบความสำคัญมาก เลขเป็นบวกความสำคัญจะน้อยกว่า|
+|VIRT|ผลรวม virtual memory ที่ถูกใช้งาน|
+|RES|แสดงการใช้งานของ RAM ขณะนั้น|
+|SHR|แสดง shared memory size ที่ถูกใช้งาน|
+|%CPU|แสดงการใช้งานของ CPU|
+|%MEM|แสดงการใช้งานของ memory|
+|TIME+|เวลาของ CPU แต่สะท้อนให้เห็นถึงรายละเอียดที่มากขึ้นตลอดเสี้ยววินาที|
+|COMMAND|ชื่อของคำสั่งที่เริ่มกระบวนการทำงาน|
+***
+
+>4.htop : การใช้งานเหมือน top เพียงแค่มีฟีเจอร์มากกว่าตัว top เช่น รองรับการทำงานของ mouse มีสีเพื่อบ่งบอกข้อมูลที่ต่างกัน
+
+
+<p align="center">
+  <img src="pic/7.jpg" alt=""/>
+</p>
+
+<h4 style="color:red">Tips : หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์ command ตามนี้ เพื่อทำการ install htop</span>
+
+<p align="center">
+  <img src="pic/8.jpg" alt="" style="margin-top:20px"/>
+</p>

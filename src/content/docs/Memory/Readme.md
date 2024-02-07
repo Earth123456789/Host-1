@@ -91,3 +91,4 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 <h4 style="color:red">Tips : หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์คำสั่ง <span style="color:blue"><em>sudo snap install htop</em></span></h4>
 
+>5.lsmem: 

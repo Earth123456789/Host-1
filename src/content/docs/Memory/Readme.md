@@ -141,7 +141,24 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 <img src="pic/lsmem7.png" alt=""/>
 
-<h4 style="color:yellow">Note : lsmem --output-all จะแสดงคอลัมน์ทั้งหมดที่เป้นไปได้ </h4>
+* Output Columns ที่มี
+    * RANGE : ช่วงของหน่วยความจำ
+    * SIZE : ขนาดของหน่วยความจำ
+    * STATE : สถานะของหน่วยความจำ
+    * REMOVABLE : หน่วยความจำที่ถอดออกได้ 
+    * BLOCK : แสดงช่วงของบล็อก
+    * NODE : numa node ของหน่วยความจำ ( numa node คือโหนดในระบบคอมพิวเตอร์ที่มีหน่วยความจำในตัว โดยมีคุณสมบัติการเข้าถึงหน่วยความจำไม่เหมือนกันในทุกๆ โหนด)
+    * ZONES : แสดงพื้นที่ที่ใช้ได้ของช่วงหน่วยความจำ
+
+<h4 style="color:yellow">Note : lsmem --output-all จะแสดงคอลัมน์ทั้งหมดที่มี </h4>
+
+>5.7 lsmem -P: สร้างผลลัพธ์ในูปแบบ key="value" โดยทุกตัวอักษรที่ไม่ปลอดภัยจะถูก hex-escaped
+
+<img src="pic/lsmem8.png" alt=""/>
+
+>5.8 lsmem -r: สร้างผลลัพธ์ในรูปแบบ raw ทั้งหมด
+
+<img src="pic/lsmem9.png" alt=""/>
 
 
 

@@ -6,7 +6,7 @@ title: Kernel
 ### Kernel คือ อะไร ?
 >ระบบปฏิบัติการที่มีหน้าที่จัดการทรัพยากรของระบบและจัดการกับการประมวลผล โดยจะเป็นตัวกลางที่มีหน้าที่ติดต่อระหว่าง Software กับ Hardware
   
-<img src="../../assets/kernel_diagram.png" alt="" />
+<img src="../../../assets/kernel_diagram.png" alt="" />
 
 ### หน้าที่ของ Kernel
 >Kernel มีหน้าที่เป็นส่วนช่วยติดต่อสื่อสารระหว่างแอปพลิเคชั่นและฮาร์ดแวร์แบบ low-level services มีอยู่ 4 อย่างได้แก่

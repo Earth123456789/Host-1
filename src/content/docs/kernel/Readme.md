@@ -64,9 +64,9 @@ depmod เป็นคำสั่งที่เพื่อสร้างห�
 
 ผลลัพธ์ เมื่อใช้ depmod
 
-(img)
+![alt text](../../../assets/kernel/demod_1.png)
 
-(img)
+![alt text](../../../assets/kernel/depmod_2.png)
 
 <h4 style="text-align: center;"><strong>modinfo module_name</strong></h4>
 
@@ -74,9 +74,9 @@ modinfo เป็นคำสั่งที่แสดงข้อมูลข
 
 ผลลัพธ์ เมื่อใช้ modinfo
 
-(img)
+![alt text](../../../assets/kernel/modinfo_1.png)
 
-(img)
+![alt text](../../../assets/kernel/modinfo_2.png)
 
 <h4 style="text-align: center;"><strong>systool -v -m module_name</strong></h4>
 
@@ -84,7 +84,7 @@ systool เป็นคำสั่งที่ดูข้อมูลอุป
 
 ผลลัพธ์ เมื่อใช้ systool
 
-(img)
+![alt text](../../../assets/kernel/systool.png)
 
 <h4 style="text-align: center;"><strong>modprobe [options] [module_name]
 ผลลัพธ์เมื่อใช้ modprode 
@@ -92,7 +92,7 @@ systool เป็นคำสั่งที่ดูข้อมูลอุป
 
 modprobe: ใช้ในการเพิ่ม หรือ ลบ kernel modules
 
-(img)
+![alt text](../../../assets/kernel/modprobe_1.png)
 
-(img)
+![alt text](../../../assets/kernel/modprobe_2.png)
 

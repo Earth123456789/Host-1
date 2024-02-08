@@ -1,3 +1,6 @@
+---
+title: Kernel
+---
 # Kernel
 
 ### Kernel คือ อะไร ?

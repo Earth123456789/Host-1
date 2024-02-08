@@ -5,20 +5,30 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Host',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/Earth123456789/Host-3',
 			},
 			sidebar: [
+				
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
+					label: 'Host Configuration',
+					autogenerate: { directory: 'hostconfiguration' },
 				},
 				{
-					label: 'Reference',
+					label: 'I/O Devices',
+					autogenerate: { directory: 'iodevices' },
+				},
+				{
+					label: 'Kernel',
+					autogenerate: { directory: 'kernel' },
+				},
+				{
+					label: 'Memory',
+					autogenerate: { directory: 'memory' },
+				},
+				{
+					label: 'reference',
 					autogenerate: { directory: 'reference' },
 				},
 			],

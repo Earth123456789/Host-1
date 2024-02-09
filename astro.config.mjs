@@ -6,6 +6,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Host',
+			favicon: '/images/favicon.png',
 			customCss:[
 				"./src/style/kmitl.css"
 			],

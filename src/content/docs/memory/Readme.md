@@ -93,7 +93,7 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 ![alt text](../../../assets/Memory/mem7.jpg)
 
-### Tips : หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์คำสั่ง 
+### Tips : หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์คำสั่ง sudo snap install htop
 
 >5.lsmem: ใช้สำหรับแสดงข้อมูลเกี่ยวกับการใช้งานหน่วยความจำในระบบ รวมถึงข้อมูลเกี่ยวกับหน่วยความจำที่ระบบใช้งานอยู่
 

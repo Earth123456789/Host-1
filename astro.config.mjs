@@ -6,6 +6,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Host',
+			customCss:[
+				"./src/style/kmitl.css"
+			],
 			social: {
 				github: 'https://github.com/Earth123456789/Host-3',
 			},

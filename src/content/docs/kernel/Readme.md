@@ -1,7 +1,7 @@
 ---
 title: Kernel
 ---
-# Kernel
+## Kernel
 
 ### Kernel คือ อะไร ?
 >ระบบปฏิบัติการที่มีหน้าที่จัดการทรัพยากรของระบบและจัดการกับการประมวลผล โดยจะเป็นตัวกลางที่มีหน้าที่ติดต่อระหว่าง Software กับ Hardware
@@ -86,13 +86,28 @@ systool เป็นคำสั่งที่ดูข้อมูลอุป
 
 ![alt text](../../../assets/kernel/systool.png)
 
-<h4 style="text-align: center;"><strong>modprobe [options] [module_name]
-ผลลัพธ์เมื่อใช้ modprode 
-</strong></h4>
+<h4 style="text-align: center;"><strong>modprobe [options] [module_name]</strong></h4>
 
 modprobe: ใช้ในการเพิ่ม หรือ ลบ kernel modules
+
+ผลลัพธ์เมื่อใช้ modprode
 
 ![alt text](../../../assets/kernel/modprobe_1.png)
 
 ![alt text](../../../assets/kernel/modprobe_2.png)
+
+
+<h4 style="text-align: center;"><strong>/sys/module</strong></h4>
+
+| คำสั่ง                                    | คำอธิบาย                                                                                                                             |
+|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| **/sys/module/[MODULENAME]**            | ถ้าโมดูลถูกคอมไพล์ในเคอร์เนลโดยตรงและไม่มีการระบุเวอร์ชันหรือพารามิเตอร์ ชื่อโมดูลจะปรากฏเฉพาะเมื่อมีการระบุเวอร์ชันหรือพารามิเตอร์ หากเป็นโมดูลไดนามิกที่โหลดได้ ชื่อโมดูลจะแสดงเสมอใน lsmod หรือ modinfo |
+| **/sys/module/[MODULENAME]/parameters** | ไดเรกทอรีนี้มีไฟล์แต่ละไฟล์เป็นพารามิเตอร์แต่ละตัวของโมดูลที่สามารถเปลี่ยนแปลงได้ขณะทำงาน (runtime) ดูเอกสารของโมดูลเองเพื่อทราบรายละเอียดของพารามิเตอร์และผลกระทบที่เกิดขึ้นจากการเปลี่ยนแปลงพารามิเตอร์นั้นๆ |
+| **/sys/module/[MODULENAME]/refcnt**    | ถ้าโมดูลสามารถถูกยกเลิกการโหลดออกจากเคอร์เนลได้, ไฟล์นี้จะแสดงจำนวนการอ้างอิงปัจจุบันของโมดูล                                                                                |
+| **/sys/module/[MODULENAME]/srcversion** | ถ้าโมดูลมี MODULE_VERSION ในโค้ดต้นฉบับ, ไฟล์นี้จะประกอบด้วยเช็คซัมของโค้ดต้นฉบับ                                                                                         |
+| **/sys/module/[MODULENAME]/version**    | ถ้าโมดูลมี MODULE_VERSION ในโค้ดต้นฉบับ, ไฟล์นี้จะประกอบด้วยเวอร์ชันของโค้ดต้นฉบับ                                                                                           |
+| **/etc/os-release**                     | เป็น Directory ที่เก็บข้อมูลของระบบปฏิบัติการ                                                                                                                                          |
+| **/usr/lib/os-release**                 | เป็น Directory ที่เก็บข้อมูลของระบบปฏิบัติการ                                                                                                                                          |
+| **/etc/initrd-release**                 | ไฟล์ /etc/initrd-release ใน initrd เหมือนกับ /etc/os-release ในระบบหลัก และบอกว่าระบบอยู่ในเฟส initrd. ควรทำ symbolic link จาก /etc/os-release ไปยัง /etc/initrd-release เพื่อให้โปรแกรมที่มองหาเฉพาะ /etc/os-release ทำงานถูกต้อง. /etc/initrd-release ไม่ได้มีการใช้งานอย่างทั่วไปในระบบปฏิบัติการ Linux แต่มันอาจมีอยู่ในบางระบบซึ่งใช้งานแบบพิเศษหรือปรับแต่งที่เฉพาะกับระบบนั้น ๆ |
+| **/usr/lib/extension-release.d/extension-release.IMAGE** | ไฟล์ ใน extension images เป็นเหมือน os-release ในระบบหลัก, ใช้ระบุประจำตัวของ extension และตรวจสอบความเข้ากันได้กับ base OS โดยตรวจสอบ ID=, SYSEXT_LEVEL= หรือ VERSION_ID=. ป้องกันไม่ให้รวมรูปภาพที่ไม่เข้ากันใน overlay |
 

@@ -17,7 +17,7 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 >1.free : คำสั่งนี้จะแสดงรายละเอียดเกี่ยวกับขนาด memory(RAM) และ swap(Virtual) ที่ถูกใช้ไปและที่เหลืออยู่ภายในระบบ โดยมีหน่วยเป็น kilobytes จะแสดงข้อมูลดังนี้
 
-<img src="pic/1.jpg" alt=""/>
+![alt text](../../../assets/Memory/mem1.jpg)
 
 |ข้อมูลที่แสดง|ความหมาย|  
 |:---:|:---:|
@@ -30,12 +30,12 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 ---
 >1.1 free -h : จะแสดงผลเหมือนกับ free แต่หน่วยของขนาดข้อมูลจะอยู่ในรูปแบบ human-readable หรือที่เรียกว่ามนุษย์เข้าใจได้
 
-<img src="pic/2.jpg" alt=""/>
+![alt text](../../../assets/Memory/mem2.jpg)
 
 ***
 >2.vmstat(virtual memory statistics) : เป็นคำสั่งที่ใช้แสดงผลรายงานเกี่ยวกับสถิติการทำงานของ Virtual memory
 
-<img src="pic/3.jpg" alt=""/>
+![alt text](../../../assets/Memory/mem3.jpg)
 
 * Procs
     * r (running): จำนวนกระบวนการที่กำลังรอให้ CPU ประมวลผล
@@ -63,17 +63,17 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 ***
 >2.1 vmstat -s : ใช้แสดงผลสถิติที่เกี่ยวข้องกับระบบทั้งหมด
 
-<img src="pic/4.jpg" alt=""/>
+![alt text](../../../assets/Memory/mem4.jpg)
 
 >2.2 vmstat -s | grep -i '.......' : ถ้าหากเราต้องการแค่บางข้อมูล เราสามารถใช้ คำสั่งนี้ได้ แล้วภายใน single quote(‘ ’) ให้ระบุข้อมูลที่เราต้องการสังเกต เช่น
 
-<img src="pic/5.jpg" alt=""/>
+![alt text](../../../assets/Memory/mem5.jpg)
 
 โดย grep ใช้สำหรับกรองและแสดงข้อมูล ส่วน -i ใช้เพื่อทำให้การค้นหาไม่ต้องพิจารณา case sensitive
 
 >3.top : ใช้เพื่อตรวจสอบการใช้งานของ memory และ CPU ที่กำลังทำงานอยู่ขณะนั้นแบบ real-time โดยจะแสดงข้อมูลของระบบและรายชื่อของกระบวนการทำงานหรือ thread ที่ถูกจัดการโดย linux kernel ซึ่งประกอบไปด้วย
 
-<img src="pic/6.jpg" alt=""/>
+![alt text](../../../assets/Memory/mem6.jpg)
 
 |ข้อมูลที่แสดง|ความหมาย|
 |:---:|:---:|
@@ -91,13 +91,13 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 >4.htop : การใช้งานเหมือน top เพียงแค่มีฟีเจอร์มากกว่าตัว top เช่น รองรับการทำงานของ mouse มีสีเพื่อบ่งบอกข้อมูลที่ต่างกัน
 
-<img src="pic/7.jpg" alt=""/>
+![alt text](../../../assets/Memory/mem7.jpg)
 
-<h4 style="color:red">Tips : หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์คำสั่ง <span style="color:blue"><em>sudo snap install htop</em></span></h4>
+### Tips : หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์คำสั่ง 
 
 >5.lsmem: ใช้สำหรับแสดงข้อมูลเกี่ยวกับการใช้งานหน่วยความจำในระบบ รวมถึงข้อมูลเกี่ยวกับหน่วยความจำที่ระบบใช้งานอยู่
 
-<img src="pic/lsmem1.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem1.png)
 
 |ข้อมูลที่แสดง|ความหมาย|
 |:---:|:---:|
@@ -110,21 +110,21 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 >5.1 lsmem -h : จะแสดงคู่มือการใช้งานหรือคำสั่งช่วยเหลือ
 
-<img src="pic/lsmem2.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem2.png)
 
 >5.2 lsmem -a: จะแสดงข้อมูลเกี่ยวกับหน่วยความจำทั้งหมดในระบบที่สามารถเข้าถึงได้ รวมถึงข้อมูลเกี่ยวกับสถานะและรายละเอียดของแต่ละหน่วยความจำ รวมถึงข้อมูลเพิ่มเติมที่ lsmem ไม่ได้แสดง
 
-<img src="pic/lsmem3.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem3.png)
 
-<h4 style="color:yellow">Note : lsmem กับ lsmem -a ตรงที่ lsmem -a จะแสดงจะแสดงข้อมูลเพิ่มเติมเกี่ยวกับหน่วยความจำทั้งหมด แต่ lsmem เหมือนเป็นแค่ภาพรวมที่ไม่ได้ลงลายละเอียด </h4>
+### Note : lsmem กับ lsmem -a ตรงที่ lsmem -a จะแสดงจะแสดงข้อมูลเพิ่มเติมเกี่ยวกับหน่วยความจำทั้งหมด แต่ lsmem เหมือนเป็นแค่ภาพรวมที่ไม่ได้ลงลายละเอียด 
 
 >5.3 lsmem -b: แสดงขนาดของไบต์โดย ข้อมูลที่แสดงจะเป็นขนาดในหน่วยไบต์ทั้งหมดโดยตรง
 
-<img src="pic/lsmem4.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem4.png)
 
 >5.4 lsmem -J: แสดงผลในรูปแบบของ JSON
 
-<img src="pic/lsmem5.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem5.png)
 
 |ข้อมูลที่แสดง|ความหมาย|
 |:---:|:---:|
@@ -139,11 +139,11 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 >5.5 lsmem -n: ไม่แสดงบรรทัดหัว
 
-<img src="pic/lsmem6.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem6.png)
 
 >5.6 lsmem -o: ระบุคอลัมน์ของผลลัพธ์ที่ต้องการแสดง ใช้ --help เพื่อรับรายการของคอลัมน์ที่รองรับทั้งหมด ใช้งานโดย + รายการที่อยากระบุคอลลัมน์ (e.g. lsmem -o +NODE)
 
-<img src="pic/lsmem7.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem7.png)
 
 * Output Columns ที่มี
     * RANGE : ช่วงของหน่วยความจำ
@@ -154,40 +154,41 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
     * NODE : numa node ของหน่วยความจำ ( numa node คือโหนดในระบบคอมพิวเตอร์ที่มีหน่วยความจำในตัว โดยมีคุณสมบัติการเข้าถึงหน่วยความจำไม่เหมือนกันในทุกๆ โหนด)
     * ZONES : แสดงพื้นที่ที่ใช้ได้ของช่วงหน่วยความจำ
 
-<h4 style="color:yellow">Note : lsmem --output-all จะแสดงคอลัมน์ทั้งหมดที่มี </h4>
+### Note : lsmem --output-all จะแสดงคอลัมน์ทั้งหมดที่มี 
 
 >5.7 lsmem -P: สร้างผลลัพธ์ในูปแบบ key="value" โดยทุกตัวอักษรที่ไม่ปลอดภัยจะถูก hex-escaped
 
-<img src="pic/lsmem8.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem8.png)
+
 
 >5.8 lsmem -r: สร้างผลลัพธ์ในรูปแบบ raw ทั้งหมด
 
-<img src="pic/lsmem9.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem9.png)
 
 >6 /proc/meminfo Virtual File : คือจะมีไฟล์เสมือนพิเศษที่ชื่อ meminfo อยู่ภายในไดเรกทอรี /proc ที่สามารถอ่านได้ด้วยคำสั่งเช่น cat และ less เป็นต้น ไฟล์ meminfo เก็บข้อมูลเกี่ยวกับขนาดหน่วยความจำที่เป็นที่อยู่ในระบบของเรารวมถึงข้อมูลอื่นๆ ที่มีประโยชน์ มาอ่านไฟล์ /proc/meminfo ด้วยคำสั่ง cat โดยรายละเอียดของคำสั่งมีดังนี้
 
 >6.1 Data Fields in /proc/meminfo : $ cat /proc/meminfo
 
-<img src="pic/lsmem10.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem10.png)
 
-<h4> Note: คำสั่งนี้จะแสดงกี่ยวกับหน่วยความจำทางกายภายในของเรา </h4>
+### Note: คำสั่งนี้จะแสดงกี่ยวกับหน่วยความจำทางกายภายในของเรา 
 
 >6.2 General Memory : $ cat /proc/meminfo | grep "Mem"
 
-<img src="pic/lsmem11.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem11.png)
 
-<h4> Note: คำสั่งนี้คือการต้องการข้อมูลพื้นฐานเกี่ยวกับหน่วยความจำ เช่น ว่าระบบของเรามีแรมเท่าไหร่ หรือมีพื้นที่ว่างเท่าไหร่ในขณะนี้</h4>
+### Note: คำสั่งนี้คือการต้องการข้อมูลพื้นฐานเกี่ยวกับหน่วยความจำ เช่น ว่าระบบของเรามีแรมเท่าไหร่ หรือมีพื้นที่ว่างเท่าไหร่ในขณะนี้ 
 
 >6.3 Buffers and Cache : $ cat /proc/meminfo | grep -e "Buffers" -we "Cached"
 
-<img src="pic/lsmem12.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem12.png)
 
 *  Buffer: องค์ประกอบในหน่วยความจำที่เป็นการเก็บข้อมูลชั่วคราว ซึ่งมักจะไม่เกิน 20 เมกะไบต์โดยทั่วไป
 * Cached: cache สำหรับไฟล์ที่อ่านจาก disk ซึ่งรวมถึง tmpfs และ shmem แต่ยกเว้น SwapCached
 
 >6.4 Swap Space : $ cat /proc/meminfo | grep "Swap"
 
-<img src="pic/lsmem13.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem13.png)
 
 *  พื้นที่สำหรับการสลับ (swap space) เป็นพื้นที่สำรองบนดิสก์สำหรับหน่วยความจำแรม (RAM) เมื่อหน่วยความจำแรมทางกายภาพเต็ม ระบบจะใช้พื้นที่สำหรับการสลับนี้:
      * SwapCached: หน่วยความจำสำรองที่ใช้เมื่อเร็วๆ นี้ ซึ่งเพิ่มความเร็วของการนำเข้าและการส่งออกข้อมูล (I/O)
@@ -196,7 +197,7 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 
 >6.5  Memory Activeness: $ cat /proc/meminfo | grep -e "Active" -e "Inactive" 
 
-<img src="pic/lsmem14.png" alt=""/>
+![alt text](../../../assets/Memory/lsmem14.png)
 
 * Active: หน่วยความจำที่ใช้งานล่าสุด, ไม่เหมาะสมกับการเรียกคืนสำหรับแอปพลิเคชัน
 * Inactive: หน่วยความจำที่ไม่ได้ใช้งานล่าสุด, เหมาะสมกับการเรียกคืนสำหรับแอปพลิเคชัน

@@ -54,11 +54,11 @@ title: HostConfig
 
 >6. ifconfig [interface][option] : ใช้ในการแสดงข้อมูลเกี่ยวกับ network interface ของเครื่องคอมพิวเตอร์รวมถึงการตั้งค่า IP address,netmask,MAC address และสถานะอื่นๆของ interface นั้นๆ
 
-![alt text](../../../assets/host/ifconfig -a.png)
+![alt text](../../../assets/host/ifconfig-a.png)
 
 >7. ip [options] object command : ใช้สำหรับแสดงข้อมูลหรือกำหนดค่าอินเตอร์เฟซเครือข่ายเช่นเดียวกันกับ ifconfig
 
-![alt text](../../../assets/host/ip adress show.png)
+![alt text](../../../assets/host/ipadressshow.png)
 
 >8. ssh [ชื่อ host]@ip_address : ใช้ในการเชื่อมต่อและจัดการกับระบบคอมพิวเตอร์ระยะไกลอย่างปลอดภัย โดย SSH จะสร้างการเชื่อมต่อเข้าไปยังเครื่องคอมพิวเตอร์อื่นผ่านเครือข่ายอินเทอร์เน็ตหรือเครือข่ายภายใน
 

@@ -121,3 +121,14 @@ modprobe: ใช้ในการเพิ่ม หรือ ลบ kernel mod
 | **/etc/initrd-release**                 | ไฟล์ /etc/initrd-release ใน initrd เหมือนกับ /etc/os-release ในระบบหลัก และบอกว่าระบบอยู่ในเฟส initrd. ควรทำ symbolic link จาก /etc/os-release ไปยัง /etc/initrd-release เพื่อให้โปรแกรมที่มองหาเฉพาะ /etc/os-release ทำงานถูกต้อง. /etc/initrd-release ไม่ได้มีการใช้งานอย่างทั่วไปในระบบปฏิบัติการ Linux แต่มันอาจมีอยู่ในบางระบบซึ่งใช้งานแบบพิเศษหรือปรับแต่งที่เฉพาะกับระบบนั้น ๆ |
 | **/usr/lib/extension-release.d/extension-release.IMAGE** | ไฟล์ ใน extension images เป็นเหมือน os-release ในระบบหลัก, ใช้ระบุประจำตัวของ extension และตรวจสอบความเข้ากันได้กับ base OS โดยตรวจสอบ ID=, SYSEXT_LEVEL= หรือ VERSION_ID=. ป้องกันไม่ให้รวมรูปภาพที่ไม่เข้ากันใน overlay |
 
+
+/usr/src/linux-<kernel-version> เป็น directory ที่เก็บ kernel sources (source codes ของ kernel)  
+
+/proc เป็น directory ที่เป็น virtual filesystem  ทำหน้าที่เป็นส่วนต่อประสานกับโครงสร้างข้อมูลภายใน Kernel สามารถใช้มันเพื่อรับข้อมูลหรือแก้ไขพารามิเตอร์ของ Kernel ในระหว่าง Runtime ได้  
+
+
+sysctl เป็นคำสั่งเปลี่ยนพารามิเตอร์ของ Kernel ในระหว่าง Runtime โดยพารามิเตอร์คังกล่าวจะอยู่ใน /proc/sys/
+
+    -   sysctl [options] [variable[=value]] [...]
+    -	sysctl -p [file or regexp] [...]  
+

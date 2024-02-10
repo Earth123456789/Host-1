@@ -3,6 +3,24 @@ title: Reference
 description: A reference page in my new Starlight docs site.
 ---
 
+## Host References
+
+- https://www.computerhope.com/unix/host.htm
+
+- https://www.cyberciti.biz/faq/linux-unix-host-command-examples-usage-syntax/
+
+- https://phoenixnap.com/kb/nslookup-command
+
+- https://phoenixnap.com/kb/linux-ping-command-examples
+
+- https://www.howtogeek.com/657780/how-to-use-the-traceroute-command-on-linux/
+
+- https://linuxize.com/post/ifconfig-command/
+
+- https://www.howtogeek.com/657911/how-to-use-the-ip-command-on-linux/
+
+- https://linuxhandbook.com/ssh-basics/
+
 ## I/O References
 
 - https://onlearn.it.kmitl.ac.th/course/view.php?id=1350

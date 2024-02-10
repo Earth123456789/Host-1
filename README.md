@@ -8,10 +8,10 @@ Computer Organization and Operating System 2/2566
 
 |รหัสนักศึกษา|ชื่อ-นามสกุล|หน้าที่|ภาพสมาชิก|
 |--------------|-----------|------------|------------|
-|65070036|นายจิรภัทร สุขนิวัตรศิริ|Memory|![](src/assets/Member/65070036_1.jpg)|
-|65070187|นายมณฑล แก้วบริวงษ์|Kernel|![](src/assets/Member/65070187_1.png)|
-|65070196|นายรพีพงษ์ วิมลเมือง|Host|![](src/assets/Member/65070196_1.jpg)|
-|65070205|นายวรินทร ปิตินานนท์|I/O|![](src/assets/Member/65070205_1.jpg)|
-|65070206|นายวสุพล พลสวัสดิ์|Memory|![](src/assets/Member/65070206_1.jpg)|
-|65070209|นายวิปัศย์ โชคนันทวงศ์|Kernel|![](src/assets/Member/65070209_1.jpg)|
-|65070242|นายสุภัศชัย โพธิชัย|I/O|![](src/assets/Member/65070242_1.jpg)|
+|65070036|นายจิรภัทร สุขนิวัตรศิริ|Memory|<img src="src/assets/Member/65070036.jpg" width="50%" height="50%">|
+|65070187|นายมณฑล แก้วบริวงษ์|Kernel|<img src="src/assets/Member/65070187_1.png" width="50%" height="50%">|
+|65070196|นายรพีพงษ์ วิมลเมือง|Host|<img src="src/assets/Member/65070196.jpg" width="50%" height="50%">|
+|65070205|นายวรินทร ปิตินานนท์|I/O|<img src="src/assets/Member/65070205.jpg" width="50%" height="50%">|
+|65070206|นายวสุพล พลสวัสดิ์|Memory|<img src="src/assets/Member/65070206.jpg" width="50%" height="50%">|
+|65070209|นายวิปัศย์ โชคนันทวงศ์|Kernel|<img src="src/assets/Member/65070209.jpg" width="50%" height="50%">|
+|65070242|นายสุภัศชัย โพธิชัย|I/O|<img src="src/assets/Member/65070242.jpg" width="50%" height="50%">|

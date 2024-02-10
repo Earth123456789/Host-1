@@ -50,4 +50,8 @@ description: A reference page in my new Starlight docs site.
 
 - https://www.vpsserver.com/check-memory-usage-in-linux/
 
+- https://www.baeldung.com/linux/proc-meminfo
+
+- https://man7.org/linux/man-pages/man1/lsmem.1.html
+
 

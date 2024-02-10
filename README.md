@@ -7,11 +7,11 @@ Computer Organization and Operating System 2/2566
 # Group Member
 
 |รหัสนักศึกษา|ชื่อ-นามสกุล|หน้าที่|ภาพสมาชิก|
-|--------------|-----------|------------|------------|
-|65070036|นายจิรภัทร สุขนิวัตรศิริ|Memory|<img src="src/assets/Member/65070036.jpg" width="30%" height="30%" text-align="middle">|
-|65070187|นายมณฑล แก้วบริวงษ์|Kernel|<img src="src/assets/Member/65070187_1.png" width="30%" height="30%" text-align="middle">|
-|65070196|นายรพีพงษ์ วิมลเมือง|Host|<img src="src/assets/Member/65070196.jpg" width="30%" height="30%" text-align="middle">|
-|65070205|นายวรินทร ปิตินานนท์|I/O|<img src="src/assets/Member/65070205.jpg" width="30%" height="30%" text-align="middle">|
-|65070206|นายวสุพล พลสวัสดิ์|Memory|<img src="src/assets/Member/65070206.jpg" width="30%" height="30%" text-align="middle">|
-|65070209|นายวิปัศย์ โชคนันทวงศ์|Kernel|<img src="src/assets/Member/65070209.jpg" width="30%" height="30%" text-align="middle">|
-|65070242|นายสุภัศชัย โพธิชัย|I/O|<img src="src/assets/Member/65070242.jpg" width="30%" height="30%" text-align="middle">|
+|:----:|:----:|:----:|:----:|
+|65070036|นายจิรภัทร สุขนิวัตรศิริ|Memory|<div style="text-align: center;"><img src="src/assets/Member/65070036.jpg" width="25%"></div>|
+|65070187|นายมณฑล แก้วบริวงษ์|Kernel|<div style="text-align: center;"><img src="src/assets/Member/65070187_1.png" width="25%"></div>|
+|65070196|นายรพีพงษ์ วิมลเมือง|Host|<div style="text-align: center;"><img src="src/assets/Member/65070196.jpg" width="25%"></div>|
+|65070205|นายวรินทร ปิตินานนท์|I/O|<div style="text-align: center;"><img src="src/assets/Member/65070205.jpg" width="25%"></div>|
+|65070206|นายวสุพล พลสวัสดิ์|Memory|<div style="text-align: center;"><img src="src/assets/Member/65070206.jpg" width="25%"></div>|
+|65070209|นายวิปัศย์ โชคนันทวงศ์|Kernel|<div style="text-align: center;"><img src="src/assets/Member/65070209.jpg" width="25%"></div>|
+|65070242|นายสุภัศชัย โพธิชัย|I/O|<div style="text-align: center;"><img src="src/assets/Member/65070242.jpg" width="25%"></div>|

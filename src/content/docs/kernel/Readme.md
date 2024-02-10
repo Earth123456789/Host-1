@@ -4,6 +4,7 @@ title: Kernel
 ## Kernel
 
 :::caution
+> [!WARNING]
 คำสั่งที่ใช้บางคำสั่งนั้นมีการ sudo นำหน้าเนื่องจากบางคำสั่งนั้นมีการกำหนด permission
 :::
 

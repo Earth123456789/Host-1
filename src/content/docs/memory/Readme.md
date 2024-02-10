@@ -94,6 +94,7 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 ![alt text](../../../assets/Memory/mem7.jpg)
 
  :::tip
+ > [!TIP]
  หากใช้คำสั่ง htop แล้วขึ้นว่า Command htop not found ให้ทำการพิมพ์คำสั่ง sudo snap install htop
  :::
 
@@ -119,6 +120,7 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 ![alt text](../../../assets/Memory/lsmem3.png)
 
 :::note
+> [!NOTE] 
 > lsmem กับ lsmem -a ตรงที่ lsmem -a จะแสดงจะแสดงข้อมูลเพิ่มเติมเกี่ยวกับหน่วยความจำทั้งหมด แต่ lsmem เหมือนเป็นแค่ภาพรวมที่ไม่ได้ลงลายละเอียด 
  :::
 
@@ -159,6 +161,7 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
     * ZONES : แสดงพื้นที่ที่ใช้ได้ของช่วงหน่วยความจำ
 
 :::note
+> [!NOTE]  
 > lsmem --output-all จะแสดงคอลัมน์ทั้งหมดที่มี 
 :::
 
@@ -186,7 +189,7 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 ![alt text](../../../assets/Memory/lsmem11.png)
 
 :::note
-
+> [!NOTE]  
 > คำสั่งนี้คือการต้องการข้อมูลพื้นฐานเกี่ยวกับหน่วยความจำ เช่น ว่าระบบของเรามีแรมเท่าไหร่ หรือมีพื้นที่ว่างเท่าไหร่ในขณะนี้ 
 > 
 :::

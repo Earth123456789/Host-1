@@ -218,7 +218,47 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 * Active: หน่วยความจำที่ใช้งานล่าสุด, ไม่เหมาะสมกับการเรียกคืนสำหรับแอปพลิเคชัน
 * Inactive: หน่วยความจำที่ไม่ได้ใช้งานล่าสุด, เหมาะสมกับการเรียกคืนสำหรับแอปพลิเคชัน
 
->6.6 Writeback Into the Disk: $ cat /proc/meminfo | grep -e "Dirty" -e "Writeback" 
+>6.6 Writeback Into the Disk : $ cat /proc/meminfo | grep -e "Dirty" -e "Writeback" 
+
+![alt text](../../../assets/Memory/lsmem15.png)
+
+* Dirty: หน่วยความจำที่กำลังรอการเขียนกลับไปยังดิสก์
+* Writeback: หน่วยความจำที่กำลังถูกเขียนกลับในขณะนี้
+* WritebackTmp: บัฟเฟอร์ชั่วคราวสำหรับการเขียนกลับที่ใช้โดยโมดูล FUSE
+
+>6.7 Shared Memory : $ cat /proc/meminfo | grep "Shmem"
+
+![alt text](../../../assets/Memory/lsmem16.png)
+
+* Shmem: ปริมาณที่ใช้โดยหน่วยความจำที่แชร์และระบบไฟล์ tmpfs
+* ShmemHugePages: ปริมาณที่ใช้โดยหน่วยความจำที่แชร์และระบบไฟล์ tmpfs ด้วยหน้าเพจขนาดใหญ่
+* ShmemPmdMapped: หน่วยความจำที่แชร์ที่มีการแมปในพื้นที่ผู้ใช้ด้วยหน้าเพจขนาดใหญ่
+
+>6.8 Allocation Availability : $ cat /proc/meminfo | grep -ie "commit"
+
+![alt text](../../../assets/Memory/lsmem17.png)
+
+* CommitLimit: ปริมาณที่มีในปัจจุบันสำหรับการจัดสรรในระบบ
+* Committed_AS: ปริมาณที่จัดสรรไว้ในระบบแล้ว
+
+>6.9 Kernel Memory : $ cat /proc/meminfo | grep -ie "reclaim" -e "slab" -e "kernel"
+
+![alt text](../../../assets/Memory/lsmem18.png)
+
+* KReclaimable: หน่วยความจำที่ถูกจัดสรรโดยแกนเคอร์เนลและสามารถเรียกคืนได้
+* Slab: หน่วยความจำระดับเคอร์เนลที่ใช้เก็บโครงสร้างข้อมูล
+* SReclaimable: ส่วนที่สามารถเรียกคืนได้ของ Slab, เช่น caches
+* SUnreclaim: ส่วนที่ไม่สามารถเรียกคืนได้ของ Slab
+* KernelStack: หน่วยความจำสำหรับสแต็กเคอร์เนลของงานทั้งหมด
+
+>6.10  Virtual Memory : $ cat /proc/meminfo | grep -e "PageTables" -e "Vmalloc"
+
+![alt text](../../../assets/Memory/lsmem19.png)
+
+* PageTables: ปริมาณหน่วยความจำที่ใช้โดยตารางหน้าที่ใช้โดยระบบหน่วยความจำเสมือน
+* VmallocTotal: ขนาดรวมของพื้นที่หน่วยความจำ vmalloc เพื่อจัดสรรหน่วยความจำเสมือนต่อเนื่องทางเสมือน
+* VmallocUsed: ขนาดของพื้นที่หน่วยความจำ vmalloc ที่ใช้งาน
+* VmallocChunk: บล็อกหน่วยความจำ vmalloc ที่เหลือว่างใหญ่ที่สุดที่เป็นเนื้อเชื่อมต่อได้
 
 
 

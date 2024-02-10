@@ -6,6 +6,6 @@ Computer Organization and Operating System 2/2566
 
 # Group Member
 
-|          |      |  | |
+|รหัสนักศึกษา|ชื่อ-นามสกุล|หน้าที่|ภาพสมาชิก|
 |--------------|-----------|------------|------------|
-|  |      |     | |
+|65070036|นายจิรภัทร สุขนิวัตรศิริ|Memory|![](outputs/output_Biotouch/18-15_02-02-2018/Identification/BLOCK_LETTERS/BLOCK_LETTERS_movementPoints_cmc.png)|

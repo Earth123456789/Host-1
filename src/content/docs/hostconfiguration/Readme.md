@@ -64,13 +64,13 @@ title: HostConfig
 
 >6. ifconfig [interface][option] : ใช้ในการแสดงข้อมูลเกี่ยวกับ network interface ของเครื่องคอมพิวเตอร์รวมถึงการตั้งค่า IP address,netmask,MAC address และสถานะอื่นๆของ interface นั้นๆ
 
-![alt text](../../../assets/host/ifconfig%20-a.png)
+![alt text](../../../assets/host/ifconfig-a.png)
 
 * เป็นการแสดงข้อมูลเกี่ยวกับ interface ที่กำลังใช้อยู่บนเครื่องส่วน -a เป็นการทำให้ ifconfig แสดงรายการทั้งหมดของอินเทอร์เฟซ รวมถึงอินเทอร์เฟซที่ไม่ได้กำหนด IP address และกำลังถูกปิดการใช้งาน
 
 >7. ip [options] object command : ใช้สำหรับแสดงข้อมูลหรือกำหนดค่าอินเตอร์เฟซเครือข่ายเช่นเดียวกันกับ ifconfig
 
-![alt text](../../../assets/host/ip%20adress%20show.png)
+![alt text](../../../assets/host/ipadressshow.png)
 
 * เป็นการแสดงข้อมูลเกี่ยวกับที่อยู่ IP ของ interface บนระบบส่วน address show เป็นการแสดงข้อมูลเกี่ยวกับทุก interface ที่มีอยู่บนระบบรวมถึง IP address, netmask, MAC address ด้วย
 
@@ -79,3 +79,4 @@ title: HostConfig
 ![alt text](../../../assets/host/ssh.png)
 
 * เป็นการแสดงข้อมูลเกี่ยวกับการเชื่อมต่อและจัดการเครื่องคอมพิวเตอร์ระยะไกลผ่านเครือข่ายอินเทอร์เน็ตหรือเครือข่ายภายในโดยที่มีการเข้ารหัสข้อมูลและการรับรองตัวตน
+

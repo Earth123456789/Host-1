@@ -129,6 +129,6 @@ modprobe: ใช้ในการเพิ่ม หรือ ลบ kernel mod
 
 sysctl เป็นคำสั่งเปลี่ยนพารามิเตอร์ของ Kernel ในระหว่าง Runtime โดยพารามิเตอร์คังกล่าวจะอยู่ใน /proc/sys/
 
-    -   sysctl [options] [variable[=value]] [...]
-    -	sysctl -p [file or regexp] [...]  
+    sysctl [options] [variable[=value]] [...]
+    sysctl -p [file or regexp] [...]  
 

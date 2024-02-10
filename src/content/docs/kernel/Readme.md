@@ -122,7 +122,7 @@ modprobe: ใช้ในการเพิ่ม หรือ ลบ kernel mod
 | **/usr/lib/extension-release.d/extension-release.IMAGE** | ไฟล์ ใน extension images เป็นเหมือน os-release ในระบบหลัก, ใช้ระบุประจำตัวของ extension และตรวจสอบความเข้ากันได้กับ base OS โดยตรวจสอบ ID=, SYSEXT_LEVEL= หรือ VERSION_ID=. ป้องกันไม่ให้รวมรูปภาพที่ไม่เข้ากันใน overlay |
   
 
-/usr/src/linux-<\kernel-version>\ เป็น directory ที่เก็บ kernel sources (source codes ของ kernel)  
+/usr/src/linux-\<kernel-version\> เป็น directory ที่เก็บ kernel sources (source codes ของ kernel)  
   
 
 /proc เป็น directory ที่เป็น virtual filesystem  ทำหน้าที่เป็นส่วนต่อประสานกับโครงสร้างข้อมูลภายใน Kernel สามารถใช้มันเพื่อรับข้อมูลหรือแก้ไขพารามิเตอร์ของ Kernel ในระหว่าง Runtime ได้  

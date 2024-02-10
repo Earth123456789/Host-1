@@ -181,6 +181,7 @@ Physical Resource มาแบ่งการใช้งาน แต่ Physic
 ![alt text](../../../assets/Memory/lsmem10.png)
 
 :::note
+> [!NOTE] 
 >คำสั่งนี้จะแสดงกี่ยวกับหน่วยความจำทางกายภายในของเรา 
 :::
 

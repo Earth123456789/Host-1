@@ -9,7 +9,7 @@ Computer Organization and Operating System 2/2566
 |รหัสนักศึกษา|ชื่อ-นามสกุล|หน้าที่|ภาพสมาชิก|
 |:----:|:----:|:----:|:----:|
 |65070036|นายจิรภัทร สุขนิวัตรศิริ|Memory|<div style="text-align: center;"><img src="src/assets/Member/65070036.jpg" width="25%"></div>|
-|65070187|นายมณฑล แก้วบริวงษ์|Kernel|<div style="text-align: center;"><img src="src/assets/Member/65070187_1.png" width="25%"></div>|
+|65070187|นายมณฑล แก้วบริวงษ์|Kernel|<div style="text-align: center;"><img src="src/assets/Member/65070187_1.png"></div>|
 |65070196|นายรพีพงษ์ วิมลเมือง|Host|<div style="text-align: center;"><img src="src/assets/Member/65070196.jpg" width="25%"></div>|
 |65070205|นายวรินทร ปิตินานนท์|I/O|<div style="text-align: center;"><img src="src/assets/Member/65070205.jpg" width="25%"></div>|
 |65070206|นายวสุพล พลสวัสดิ์|Memory|<div style="text-align: center;"><img src="src/assets/Member/65070206.jpg" width="25%"></div>|

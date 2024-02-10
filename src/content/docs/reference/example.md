@@ -1,11 +1,15 @@
 ---
-title: Example Reference
+title: Reference
 description: A reference page in my new Starlight docs site.
 ---
 
 ## I/O References
 
+- https://onlearn.it.kmitl.ac.th/course/view.php?id=1350
+
 - https://embetronicx.com/tutorials/linux/device-drivers/linux-device-driver-part-1-introduction/#1_Linux_Device_Drivers
+
+- https://phoenixnap.com/kb/linux-commands-cheat-sheet
 
 - https://www.educative.io/answers/how-to-do-input-output-redirection-in-linux
 
@@ -16,6 +20,9 @@ description: A reference page in my new Starlight docs site.
 - https://wiki.archlinux.org/title/Xmodmap
   
 - https://wiki.archlinux.org/title/Xinput
+
+- https://ubuntu.com/server/docs/network-configuration
+
 
 
 ## Kernel References

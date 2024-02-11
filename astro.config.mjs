@@ -11,7 +11,7 @@ export default defineConfig({
 				"./src/style/kmitl.css"
 			],
 			social: {
-				github: 'https://github.com/Earth123456789/Host-3',
+				github: 'https://github.com/Earth123456789/Host-1',
 			},
 			sidebar: [
 				

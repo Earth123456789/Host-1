@@ -100,6 +100,11 @@ systool เป็นคำสั่งที่ดูข้อมูลอุป
 
 modprobe: ใช้ในการเพิ่ม หรือ ลบ kernel modules
 
+:::caution
+> [!WARNING]
+การใช้ modprobe นั้นอาจเกิดการเปลี่ยนแปลงของระบบขึ้นได้
+:::
+
 ผลลัพธ์เมื่อใช้ modprode
 
 ![alt text](../../../assets/kernel/modprobe_1.png)
